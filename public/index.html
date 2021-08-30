@@ -3,25 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>icone.ico">
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <link rel="icon" href="<%= BASE_URL %>faa.ico">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
     <title>BitDoge</title>
     <link rel="apple-touch-icon" href="images/favicon.png">
 <link rel="shortcut icon" href="images/favicon.png">
-<link rel="stylesheet" href="assets/css/normalize.css">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/themify-icons.css">
-<link rel="stylesheet" href="assets/css/pe-icon-7-filled.css">
-<link href="assets/weather/css/weather-icons.css" rel="stylesheet" />
-<link href="assets/calendar/fullcalendar.css" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/style.css">
-<link href="assets/css/charts/chartist.min.css" rel="stylesheet">
-<link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+<link href="css/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<style>
+   @font-face {
+      font-family: ubuntu;
+      src: url(Ubuntu-BoldItalic.ttf);
+    }
+    @font-face {
+      font-family: doge;
+      src: url(DogeSans-Regular.otf);
+    }
+    body {
+      height: 100vh;
+      font-family: Ubuntu !important;
+    }
+</style>
+
 
   </head>
-  <body>
+  <body class="sb-nav-fixed" style=" background-image: url('./img/bg.jpg') ;background-attachment: fixed;background-size: cover; ">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
@@ -29,22 +41,13 @@
     <!-- built files will be auto injected -->
    
 
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/popper.min.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/plugins.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/main.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/chart-js/Chart.bundle.js"></script>
-    
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/chartist/chartist.min.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/chartist/chartist-plugin-legend.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/flot-chart/jquery.flot.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/flot-chart/jquery.flot.pie.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/flot-chart/jquery.flot.spline.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/weather/js/jquery.simpleWeather.min.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/weather/js/weather-init.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/js/lib/moment/moment.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/calendar/fullcalendar.min.js"></script>
-    <script src="https://colorlib.com/polygon/elaadmin/assets/calendar/fullcalendar-init.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="assets/demo/chart-area-demo.js"></script>
+    <script src="assets/demo/chart-bar-demo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
     
   </body>
 </html>

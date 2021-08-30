@@ -14,7 +14,7 @@ const getters = {
 }
 const actions = {
    async getNetwork({commit}){
-    window.web3 = new Web3(window.ethereum);
+    window.web3 = new Web3(Web3.givenProvider || "https://bsc-dataseed.binance.org");
     let id = await window.web3.eth.net.getId();
     commit("setNeworkID" , id);
    },
@@ -22,11 +22,14 @@ const actions = {
 
    },
    async innitaliseWeb3(){
-        if (window.ethereum) {
-        window.web3 = new Web3(window.ethereum);
+    ///
+
+    const web3 = new Web3(new Web3.providers.HttpProvider("https://bsc-dataseed.binance.org"))
+
+        window.web3 = web3;
         window.tokenContract   =  await new window.web3.eth.Contract( tokenAbi ,tokenAddress);
         window.devidentContact   =  await new window.web3.eth.Contract( devidentAbi ,devidentAddress);
-    }
+    
     },
     validateMetamaskAvailable (){
         return new Promise( (resolve , reject) => {

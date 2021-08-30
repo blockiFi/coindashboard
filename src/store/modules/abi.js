@@ -1461,6 +1461,6 @@ const devidentAbi = [
 	}
 ]
 
-const tokenAddress = "0xf8d09c9bc04c1721ee6d647aa4dac2ce39c6eb1b"
-const devidentAddress = "0x700f6eb8da26daf8a37ce5ed478ff4cc4119cf85"
+const tokenAddress = "0xE81BfBB53A195Fa3B6D1b12C4c1ea5452490BB8c"
+const devidentAddress = "0x60f695D9FcfeDDa7b8eCb016F4a499b2751c286F"
 export  {tokenAbi , devidentAbi ,  devidentAddress, tokenAddress}
